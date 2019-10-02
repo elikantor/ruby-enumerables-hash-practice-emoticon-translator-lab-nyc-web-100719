@@ -16,7 +16,8 @@ end
 
 def get_japanese_emoticon(file, emoticon)
   load_library(file)
-  
+  puts load_library(file)[:get_meaning]
+  puts load_library(file)[:get_meaning]
   binding.pry
   
   
