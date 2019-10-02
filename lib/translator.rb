@@ -3,8 +3,8 @@ require 'pry'
 require "yaml"
 
 
-def load_library(emoticons = YAML.load_file('emoticons.yml'))
-  emoticons = {}
+def load_library(asdf)
+  emoticons = YAML.load_file(asdf)
   
   emoticons.map {|ele, subele|
     binding.pry
