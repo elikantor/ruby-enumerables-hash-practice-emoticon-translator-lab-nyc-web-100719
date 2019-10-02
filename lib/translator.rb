@@ -9,10 +9,10 @@ def load_library(asdf)
   
   emoticons.map {|ele, subele|
     new_hash[:get_meaning] = {}
-    new_hash[:get_meaning][subele[1]] = subele[0]
+    new_hash[:get_meaning][subele[1]] = ele
     new_hash[:get_emoticon] = {}
     new_hash[:get_emoticon][subele[0]] = subele[1]
-  binding.pry
+  # binding.pry
   }
 
   new_hash
