@@ -13,6 +13,8 @@ def load_library(asdf)
     new_hash[:get_meaning] = ele
     new_hash[:get_emoticon] = {}
     new_hash[:get_emoticon] = subele
+    
+    
   }
   
   new_hash
