@@ -11,7 +11,7 @@ def load_library(asdf)
     new_hash[:get_meaning] = {}
     new_hash[:get_meaning][subele[1]] = subele[0]
     new_hash[:get_emoticon] = {}
-    new_hash[:get_emoticon] = ele
+    new_hash[:get_emoticon][subele[0]] = subele[1]
   }
   # binding.pry
   new_hash
