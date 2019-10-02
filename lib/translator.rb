@@ -7,7 +7,7 @@ def load_library(asdf)
   emoticons = YAML.load_file(asdf)
   
   emoticons.map {|ele, subele|
-    binding.pry
+    # binding.pry
     emoticons[:get_meaning] = {}
     emoticons[:get_meaning] = ele
     emoticons[:get_emoticon] = {}
