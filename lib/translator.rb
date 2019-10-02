@@ -18,7 +18,7 @@ def load_library(asdf)
       ele.map{ |array|
         new_hash[:get_emoticon][array[0]] = subele[1]
       }
-
+  }
   new_hash
 end
 
