@@ -6,12 +6,13 @@ require "yaml"
 def load_library(asdf)
   emoticons = YAML.load_file(asdf)
   new_hash = {}
+  
   emoticons.map {|ele, subele|
     # binding.pry
-    emoticons[:get_meaning] = {}
-    emoticons[:get_meaning] = ele
-    emoticons[:get_emoticon] = {}
-    emoticons[:get_emoticon] = subele
+    new_hash[:get_meaning] = {}
+    new_hash[:get_meaning] = ele
+    new_hash[:get_emoticon] = {}
+    new_hash[:get_emoticon] = subele
   }
   
   new_hash
